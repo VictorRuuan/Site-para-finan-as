@@ -13,16 +13,19 @@
         <button onclick="logout()">Sair</button>
     </div>
 </header>
+
 <section class="container">
     <h2>Nova Transação</h2>
 
     <form id="transacaoForm">
         <input type="text" id="descricao" placeholder="Descrição" required>
         <input type="number" id="valor" placeholder="Valor" required>
+
         <select id="tipo">
             <option value="entrada">Entrada</option>
             <option value="saida">Saída</option>
         </select>
+
         <button type="submit">Salvar</button>
     </form>
 
@@ -30,7 +33,6 @@
     <ul id="listaTransacoes"></ul>
 </section>
 
- <script src="js/auth.js"></script>
 <script src="js/dashboard.js"></script>
 </body>
 </html>
